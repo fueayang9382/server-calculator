@@ -1,0 +1,22 @@
+{
+  "name": "server-calculator",
+  "version": "1.0.0",
+  "description": "[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md",
+  "main": "mockServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fueayang9382/server-calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fueayang9382/server-calculator/issues"
+  },
+  "homepage": "https://github.com/fueayang9382/server-calculator#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
