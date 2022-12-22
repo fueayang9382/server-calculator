@@ -12,18 +12,20 @@
 <body>
     <h1>checking for H1 is linked with css</h1>
     <input id="numOne" type="number" placeholder="Enter a Number">
-    <button id="addingTwoNums" class="thebutton">+</button>
-    <!-- <button id="addingTwoNums" class="thebutton">-</button>
-    <button id="addingTwoNums" class="thebutton">/</button>
-    <button id="addingTwoNums" class="thebutton">*</button> -->
+    <button id="add" class="thebutton">+</button>
+    <button id="subtract" class="thebutton">-</button>
+    <button id="divide" class="thebutton">/</button>
+    <button id="multiply" class="thebutton">*</button>
     <input id="numTwo" type="number" placeholder="Enter a Number">
     <button id="submitTwoNumbers">=</button> 
     <button id="clearTheResult">Clear</button>
-    <div>
-        <h2>answer <span id="result"></span></h2>
-    </div>
-    <div id="recent">
+    <!--BELOW is where the append will happend. -->
+        <h2 id="currentResult">
+            answer <span id="result"></span>
+        </h2>
+    <ul id="recentHistory">
+        <!-- result should append here. -->
+    </ul>
 
-    </div>
 </body>
 </html>
