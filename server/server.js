@@ -32,7 +32,35 @@ app.get('/calculations', (req,res)=>{
 
 app.post('/calculations', (req, res)=>{
     console.log(req.body);
+        console.log('In the step to push object into the array.');
+        let numberX1 = req.body.numberX1
+        let numberX2 = req.body.numberX2
+        let operator = req.body.operator
+        let result;
+        switch (operator){
+            case "+":
+                result= Number(numberX1) + Number(numberX2);
+                break;
+            case "-":
+                result= Number(numberX1) - Number(numberX2);
+                break;
+            case "/":
+                result= Number(numberX1) / Number(numberX2);
+                break;
+            case "*":
+                result= Number(numberX1) * Number(numberX2);
+                break;
+        }
     
+       let  twoNumbersObject = {
+            numOne: numberX1,
+            numTwo: numberX2,
+            operator: operator,
+            result: result
+        }
+    
+        calculations.push(twoNumbersObject);
+        res.sendStatus(201);
 })
 
 

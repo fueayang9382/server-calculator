@@ -57,15 +57,16 @@ function theSubmitTwoNums() {
     method: 'POST', //sending the object to the server
     data: twoNumberObject
     }).then((res)=>{
+    clearInputs()
+    fetchAndRenderCalculation()
     console.log(res);
     })
 }
 
-function checkForSubmitionDenied() {
-    if (numberX1 === '' || numberX2 === '' || operator === '') {
-        alert('Please try again. Make sure to enter mathematical equation')
-        return; 
-    }
+function clearInputs() {
+    $('#numOne').val('')
+     $('#numTwo').val('')
+     operator = ''
 }
 // this function make sure users have correct full math equation.
 //get data from / calculation , then render
