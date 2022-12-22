@@ -4,27 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="./scripts/jqueryInsert.js"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./vendors/jqueryInsert.js"></script>
     <script src="./scripts/client.js"></script>
-    <script src="./server.js"></script>
-    <title>Server Calculator</title>
+    <title>Tou's Server Calculator</title>
 </head>
 <body>
     <h1>checking for H1 is linked with css</h1>
     <input id="numOne" type="number" placeholder="Enter a Number">
-    <button id="addingTwoNums" class="thebutton">+</button>
-    <!-- <button id="addingTwoNums" class="thebutton">-</button>
-    <button id="addingTwoNums" class="thebutton">/</button>
-    <button id="addingTwoNums" class="thebutton">*</button> -->
+    <button id="add" class="thebutton">+</button>
+    <button id="subtract" class="thebutton">-</button>
+    <button id="divide" class="thebutton">/</button>
+    <button id="multiply" class="thebutton">*</button>
     <input id="numTwo" type="number" placeholder="Enter a Number">
     <button id="submitTwoNumbers">=</button> 
     <button id="clearTheResult">Clear</button>
-    <div>
-        <h2>answer <span id="result"></span></h2>
-    </div>
-    <div id="recent">
+    <!--BELOW is where the append will happend. -->
+        <h2 id="currentResult">
+            answer <span id="result"></span>
+        </h2>
+    <ul id="recentHistory">
+        <!-- result should append here. -->
+    </ul>
 
-    </div>
 </body>
 </html>
